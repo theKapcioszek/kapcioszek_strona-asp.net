@@ -1,0 +1,132 @@
+body {
+    color: #dded00;
+    background-image: url("../../img/trees.jpg");
+    background-size: cover;
+    background-size: cover;
+    margin: 0px;
+}
+
+a {
+    color: #dded00;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 5%;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 30px;
+}
+
+td {
+    border: 5px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+tr:hover {
+    background-color: #dded00;
+    color: #615263;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #dded00;
+}
+
+.menu a {
+    margin: 1%;
+    background-color: #615263;
+    border-radius: 5%;
+    padding: 0.5%;
+    color: #dded00;
+}
+
+.menu a:hover {
+    background-color: #dded00;
+    color: #615263;
+}
+
+.menu #branding {
+    position: absolute;
+    display: flex;
+    top: 1%;
+    left: 1%;
+    margin: 0px;
+    background: none;
+}
+
+.menu #branding a {
+    background: none;
+}
+
+.menu #branding img {
+    width: 60px;
+    height: 60px;
+}
+
+.menu #branding p {
+    font-size: 30px;
+    color: #615263;
+    margin-left: 10%;
+    margin-top: 9%;
+    font-family: 'Oregano', cursive;
+}
+
+.body {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4.1%;
+    padding-bottom: 4.5%;
+    background-color: #615263;
+}
+
+.body img {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    border-top: 1px #919926 solid;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: #615263;
+}
+
+.footer a {
+    color: #919926;
+}

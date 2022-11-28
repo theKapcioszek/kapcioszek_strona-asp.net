@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Strona Główna";
+    ViewData["css"] = "site.css";
+    ViewData["favicon"] = "../img/channels4_profile.ico";
+}
+
+<div class="body-mp">
+    <div>
+        <h2>Strona Główna</h2>
+    </div>
+    <div>
+        <p>
+            Hej! Jestem Kapcioszek. Moim hobby produkcja muzyki. Myślę, że z każdym albumem idzie
+            mi coraz lepiej ale to już tobie, drogi słuchaczu oceniać. Jednym z moich marzeń jest możliwość robienia
+            w przyszłości piosenek z tekstem (na razie tworzę tylko utwory z samą muzyką).
+        </p>
+        <p>
+            Dotychczas mam wydane dwa albumy plus trzeci prawie skończony (niestety przez problemy z komputerem oraz
+            sprawy prywatne prace się mocno opóźniły), który mam nadzieję wydać jeszcze w tym roku. Oprócz tego mam
+            na swoim kanale na youtube jeszcze kilka utowrów nie należących do żadnego albumu albo, które miały być
+            albumami a ostatecznie
+            wyszło z tego tylko kilka utworów.
+        </p>
+    </div>
+    <div>
+
+        <p>
+            Losowe polecenie utworu:
+        </p>
+
+        <table>
+                <tr>
+                    <td>
+                        @Model.name
+                    </td>
+                    <td>
+                        @Model.aname
+                    </td>
+                    <td>
+                        <iframe width="360" height="215" src="@Model.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </td>
+                </tr>
+        </table>
+
+    </div>
+
+</div>

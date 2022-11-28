@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapcioszk - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/@ViewData["css"]" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat&family=Oregano&display=swap"
+          rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="@ViewData["favicon"]">
+</head>
+<body>
+   <div class="menu">
+        <div id="branding">
+            <img src="@ViewData["favicon"]" alt="logo">
+            <a asp-page="/Index">
+                <p>Kapcioszek</p>
+            </a>
+        </div>
+        <a asp-page="/Index">Strona Główna</a>
+        <a asp-page="/Albumy">Albumy</a>
+        <a asp-page="/About">O mnie</a>
+    </div>
+    @RenderBody()
+    <div class="footer">
+        <div><a asp-page="/Index"><b>Kapcioszek</b></a></div>
+        <div><a href="https://www.youtube.com/channel/UCET1UxPbAb7M7CqZXo5D79w">Youtube</a></div>
+        <div><a href="https://open.spotify.com/artist/0mvaqOMQmfzd3e5z8qcSjg">Spotify</a></div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

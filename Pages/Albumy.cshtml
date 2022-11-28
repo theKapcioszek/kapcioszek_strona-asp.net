@@ -1,0 +1,24 @@
+﻿@page
+@model AlbumyModel
+@{
+    ViewData["Title"] = "Albumy";
+    ViewData["css"] = "site.css";
+    ViewData["favicon"] = "../img/channels4_profile.ico";
+}
+
+<div class="body">
+    <div>
+        <h2>Albumy</h2>
+    </div>
+
+    <table>
+        @foreach (int item in Model.id)
+        {
+            <tr>
+                <td><img src="@Model.cover_art[item]" height="200" width="200" /></td>
+                <td><a asp-page="/@Model.link[item]">@Model.name[item]</a></td>
+                <td>@Model.year_of_release[item]</td>
+            </tr>
+        }
+    </table>
+</div>

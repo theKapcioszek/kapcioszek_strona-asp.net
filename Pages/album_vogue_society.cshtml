@@ -1,0 +1,30 @@
+﻿@page
+@model Kapcioszek_strona.Pages.album_vogue_societyModel
+@{
+    ViewData["Title"] = "Vogue Society";
+    ViewData["css"] = "style3.css";
+    ViewData["favicon"] = "../img/channels4_profile_3.png";
+}
+
+    <div class="body">
+        <div>
+            <h2>Vogue Society</h2>
+        </div>
+        <div>
+            <table>
+                @foreach (int item in Model.id)
+                {
+                    <tr>
+                        <td>
+                            @Model.name[item]
+                        </td>
+                        <td>
+                            <iframe width="360" height="215" src="@Model.link[item]" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+
